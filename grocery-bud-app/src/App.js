@@ -13,6 +13,20 @@ const getLocalStorage = () => {
 };
 
 function App() {
+  const [name, setName] = useState('');
+  const [list, setList] = useState(getLocalStorage());
+  const [isEdition, setIsEdition] = useState(false);
+  const [editID, setEditID] = useState(null);
+  const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if ()
+  };
+
+
+
   return <h2>grocery bud setup</h2>
 }
 
