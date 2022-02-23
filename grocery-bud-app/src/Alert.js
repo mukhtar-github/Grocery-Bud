@@ -8,7 +8,7 @@ const Alert = ({ type, msg, removeAlert, list }) => {
     return () => clearTimeout(timeout);
   }, [list]);
 
-  return <h2>alert component</h2>
+  return (<p className={`alert alert-${type}`}>{msg}</p>);
 }
 
 export default Alert
