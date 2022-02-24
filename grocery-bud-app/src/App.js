@@ -53,6 +53,16 @@ function App() {
   const clearList = () => {
     showAlert(true, 'danger', 'empty list');
     setList([]);
+  };
+
+  const renoveItem = (id) => {
+    showAlert(true, 'danger', 'item removed');
+    setList(list.filter((item) => item.id === !id));
+  };
+
+  const editItem = (id) => {
+    const specificItem = list.find((item) => item.id === id);
+
   }
 
 
