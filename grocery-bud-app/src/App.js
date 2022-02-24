@@ -46,6 +46,10 @@ function App() {
     }
   };
 
+  const showAlert = (show = false, type = '', msg = '') => {
+    setAlert({ show, type, msg });
+  }
+
 
 
   return <h2>grocery bud setup</h2>
