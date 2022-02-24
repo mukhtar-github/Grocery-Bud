@@ -37,6 +37,12 @@ function App() {
       setEditID(null);
       setIsEditing(false);
       showAlert(true, 'success', 'value change');
+    } else {
+      showAlert(true, 'success', 'item added to the list');
+      const newItem = { id: new Date().getTime().toString(), title: name };
+
+      setList([...List, newItem]);
+      setName('');
     }
   };
 
