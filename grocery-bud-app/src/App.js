@@ -34,6 +34,9 @@ function App() {
         })
       );
       setName('');
+      setEditID(null);
+      setIsEditing(false);
+      showAlert(true, 'success', 'value change');
     }
   };
 
