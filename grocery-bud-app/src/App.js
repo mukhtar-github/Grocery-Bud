@@ -15,14 +15,26 @@ const getLocalStorage = () => {
 function App() {
   const [name, setName] = useState('');
   const [list, setList] = useState(getLocalStorage());
-  const [isEdition, setIsEdition] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
   
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if ()
+    if (!name) {
+      showAlert(true, 'danger', 'please enter value');
+    } else if (name && isEditing) {
+      setList(
+        list.map((item) => {
+          if (item.id === editID) {
+            return { ...item, title: name };
+          }
+          return item;
+        })
+      );
+      setName('');
+    }
   };
 
 
