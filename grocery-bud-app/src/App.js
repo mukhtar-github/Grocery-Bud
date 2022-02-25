@@ -67,6 +67,10 @@ function App() {
     setName(specificItem.title);
   };
 
+  useEffect(() => {
+    
+  })
+
 
 
   return <h2>grocery bud setup</h2>
