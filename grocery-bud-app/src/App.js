@@ -62,7 +62,8 @@ function App() {
 
   const editItem = (id) => {
     const specificItem = list.find((item) => item.id === id);
-
+    setIsEditing(true);
+    setEditID(id);
   }
 
 
