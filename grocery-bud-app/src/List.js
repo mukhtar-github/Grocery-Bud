@@ -32,4 +32,4 @@ const List = ({ items, removeItem, editItem }) => {
   );
 }
 
-export default List
+export default List;
