@@ -55,7 +55,7 @@ function App() {
     setList([]);
   };
 
-  const renoveItem = (id) => {
+  const removeItem = (id) => {
     showAlert(true, 'danger', 'item removed');
     setList(list.filter((item) => item.id === !id));
   };
