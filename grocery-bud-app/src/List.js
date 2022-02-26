@@ -17,12 +17,19 @@ const List = ({ items, removeItem, editItem }) => {
               >
                 <FaEdit />
               </button>
+              <button
+                type='button' 
+                className='delete-btn'
+                onClick={() => removeItem(id)}  
+              >
+                <FaTrash />
+              </button>
             </div>
           </article>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
 
 export default List
